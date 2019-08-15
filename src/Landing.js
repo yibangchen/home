@@ -42,7 +42,8 @@ class Landing extends Component {
         <div style={ contentStyle }>
           <h1>Hi, I'm Yibang</h1>
           <i className="fas fa-wrench fa-spin fa-2x"></i>
-          <h1>Site Under Construction...</h1>
+          <h1>site under construction</h1>
+          <h1>please come back later</h1>
         </div>
       </div>
      );

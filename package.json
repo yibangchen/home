@@ -4,13 +4,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "d3": "^5.9.7",
     "gh-pages": "^2.1.1",
     "react": "^16.9.0",
+    "react-addons-transition-group": "^15.6.2",
     "react-dom": "^16.9.0",
+    "react-ga": "^2.6.0",
     "react-landing-page": "^2.0.2",
+    "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
     "rebass": "^3.0.0-12",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
     "styled-components": "^4.3.2"
   },
   "scripts": {

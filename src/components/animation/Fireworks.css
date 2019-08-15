@@ -1,0 +1,49 @@
+
+#base, svg{
+    position:absolute;
+    left:0;
+    top:0;
+}
+#base{
+    width: 960px;
+    height: 500px;
+}
+
+#message {
+    width: 500px;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top:100px;
+}
+
+#logo {
+    width: 500px;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 72px;
+    text-align: left;
+    line-height: 68px;
+    position: relative;
+}
+
+#logo span {
+    position: absolute;
+    top: 7px;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    line-height: 72px;
+    font-size: 60px;
+    text-align: center;
+    background: #f7df1e;
+    color: #222;
+}
+
+#logo .j {
+    right: 80px;
+}
+
+#logo .s {
+    right: 0;
+}
