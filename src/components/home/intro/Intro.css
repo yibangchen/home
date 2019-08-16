@@ -1,0 +1,71 @@
+.profile-picture-container {
+  width:250px;
+  height:100%;
+  overflow:hidden;
+}
+
+.profile-picture-container img {
+  object-fit: cover;
+  width:300px;
+}
+
+@media all and (max-width : 840px) {  
+  .cracked {
+    font-size: 3.5em;
+  }
+}
+
+@media all and (min-width : 841px) {  
+  .cracked {
+    font-size: 5em;
+  }
+}
+
+.cracked {
+  background-color: black;
+  font-family: Coolvetica, Arial;
+  color:#fff;
+  text-transform: uppercase;
+  position: relative;
+  animation: glow 3s linear infinite 5s;
+  animation-direction: alternate;
+  text-shadow: 0 0 3rem #ff2525;
+  filter: brightness(150%) blur(0.07rem);
+}
+.cracked span:nth-child(1) ,
+.cracked span:nth-child(3) {
+  position: absolute;
+  top:0;
+  left:0;
+}
+.cracked span:nth-child(1)  {
+  clip-path: polygon(-10% 0%, 10% 0%, 60% 100%, -10% 100%);
+  animation: crack1 0.2s linear forwards 2s;
+}
+.cracked span:nth-child(2)  {
+  clip-path: polygon(10% 0%, 40% 0%, 80% 100%, 60% 100%);
+}
+.cracked span:nth-child(3) {
+  clip-path: polygon(40% 0%, 110% 0%, 110% 100%, 80% 100%);
+  animation: crack2 0.2s linear forwards 4s;
+}
+@keyframes crack1 {
+  0% {transform: translate(0%,0%); }
+  100% {transform: translate(-2%, 1%) rotateZ(1deg); }
+}
+@keyframes crack2 {
+  0% {transform: translate(0%,0%); }
+  100% {transform: translate(2%, -1%) rotateZ(1deg); }
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 3rem #ff2525;
+    filter: brightness(150%) blur(0.07rem);
+  }
+  100% {
+    text-shadow: 0 0 3rem #c98686;
+    filter: brightness(150%) blur(0.12rem);
+  }
+}
+
+

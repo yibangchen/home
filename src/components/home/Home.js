@@ -5,7 +5,7 @@ import { withRouter } from 'react-router';
 import Navbar from './Navbar';
 import NavbarItems from './NavbarItems';
 // import Fireworks from '../animation/Fireworks';
-import Alphabet from '../animation/showName/Alphabet';
+import Intro from './intro/Intro';
 
 import './Home.css';
 
@@ -51,13 +51,7 @@ class Home extends Component {
               currentScroll = {()=>{}}
              />
           </div>
-          <div className="container">
-            <h2>Hi, I'm Yibang!</h2>
-            <p>This is my personal website. It is still under construction. Please come back later</p>
-            <svg width="800" height="600">
-                <Alphabet x="32" y="300" />
-            </svg>
-          </div>
+          <Intro />
         </div>
       );
     }

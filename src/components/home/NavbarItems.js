@@ -13,9 +13,6 @@ const NavbarItems = [
   },   {
     name: 'contact',
     component: null
-  }, {
-    name: 'transform',
-    component: null
   }
 ]
 

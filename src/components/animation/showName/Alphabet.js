@@ -5,10 +5,11 @@ import * as d3 from 'd3';
 import Letter from './Letter';
 
 class Alphabet extends Component {
+    
     static letters = "This is my personal website. It is still under construction. Please come back later".split('');
     state = {alphabet: []};
 
-    componentWillMount() {
+    componentDidMount() {
         d3.interval(() => this.setState({
             alphabet: d3.shuffle(Alphabet.letters)
                         .slice(0, Math.floor(Math.random() * Alphabet.letters.length))
