@@ -1,11 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar = ({ items, currentSection, currentScroll, onItemClick}) => {
-
-  const onLinkClick = itemName => {
-    // save for react-ga
-  }
+const Navbar = ({ items, onItemClick}) => {
 
   return (
     <div>

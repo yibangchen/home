@@ -1,5 +1,5 @@
 import React from 'react';
-import Alphabet from '../../animation/showName/Alphabet';
+// import Alphabet from '../../animation/showName/Alphabet';
 
 import './Intro.css';
 

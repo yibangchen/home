@@ -4,6 +4,7 @@ import { withRouter } from 'react-router';
 
 import Navbar from './Navbar';
 import NavbarItems from './NavbarItems';
+import Background from './background/Background';
 // import Fireworks from '../animation/Fireworks';
 import Intro from './intro/Intro';
 
@@ -39,7 +40,7 @@ class Home extends Component {
     _getPageElementFromKey = () => {}
 
     render = () => {
-      const { currentSection, currentScroll } = this.state;
+      // const { currentSection, currentScroll } = this.state;
 
       return (
         <div className="root-home">
@@ -50,6 +51,7 @@ class Home extends Component {
               currentSection = {()=>{}}
               currentScroll = {()=>{}}
              />
+            <Background />
           </div>
           <Intro />
         </div>

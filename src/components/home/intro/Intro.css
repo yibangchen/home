@@ -12,12 +12,37 @@
 @media all and (max-width : 840px) {  
   .cracked {
     font-size: 3.5em;
+    text-shadow: 0 0 2.1rem #ff2525;
+    filter: brightness(150%) blur(0.042rem);
+  }
+
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 2.1rem #ff2525;
+      filter: brightness(150%) blur(0.042rem);
+    }
+    100% {
+      text-shadow: 0 0 2.1rem #c98686;
+      filter: brightness(150%) blur(0.072rem);
+    }
   }
 }
 
 @media all and (min-width : 841px) {  
   .cracked {
     font-size: 5em;
+    text-shadow: 0 0 3rem #ff2525;
+    filter: brightness(150%) blur(0.07rem);
+  }
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 3rem #ff2525;
+      filter: brightness(150%) blur(0.07rem);
+    }
+    100% {
+      text-shadow: 0 0 3rem #c98686;
+      filter: brightness(150%) blur(0.12rem);
+    }
   }
 }
 
@@ -29,8 +54,6 @@
   position: relative;
   animation: glow 3s linear infinite 5s;
   animation-direction: alternate;
-  text-shadow: 0 0 3rem #ff2525;
-  filter: brightness(150%) blur(0.07rem);
 }
 .cracked span:nth-child(1) ,
 .cracked span:nth-child(3) {
@@ -57,15 +80,6 @@
   0% {transform: translate(0%,0%); }
   100% {transform: translate(2%, -1%) rotateZ(1deg); }
 }
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 3rem #ff2525;
-    filter: brightness(150%) blur(0.07rem);
-  }
-  100% {
-    text-shadow: 0 0 3rem #c98686;
-    filter: brightness(150%) blur(0.12rem);
-  }
-}
+
 
 
