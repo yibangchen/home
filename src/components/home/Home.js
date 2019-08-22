@@ -51,7 +51,6 @@ class Home extends Component {
               currentSection = {()=>{}}
               currentScroll = {()=>{}}
              />
-            <Background />
           </div>
           <Intro />
         </div>

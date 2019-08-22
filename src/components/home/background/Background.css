@@ -3,29 +3,20 @@
   margin: 0;
 }
 
-.bg-area {
-  height: 100vh;
-  font-family: 'Lato', sans-serif;
-  /*background-color: grey;*/
+html,
+body {
+  height: 100%;
 }
 
 canvas {
-  display:block;
+   position:absolute;
+   height:100%; width:100%;
 }
 
-#title {
-  position: fixed;
-  left: 34%;
-  width: 66%;
-  top: 38%;
-  text-align: center;
-  font-size: 2.2rem;
-  color: #fff;
-  letter-spacing: 4rem;
-  text-indent: 4rem;
-  opacity: 0.9;
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
-  pointer-events: none;
+.bg-area {
+  /*height: 100vh;*/
+  font-family: 'Lato', sans-serif;
+  /*background-color: grey;*/
 }
 
 a {

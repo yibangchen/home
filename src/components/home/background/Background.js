@@ -11,21 +11,32 @@ class Background extends Component {
     this.state= {}
   }
 
-  // componentDidMount() {
-  //   start();
-  // }
+  componentDidMount() {
+    this.loadEffect();
+  }
 
-  loadEffect() {
+  loadEffect = () => {
+    const canvas = this.refs.canvas;
+    const ctx = canvas.getContext("2d");
+    const img = this.refs.image;
+    img.onload = () => {
+      ctx.drawImage(img, 0, 0);
+      ctx.font = '';
+    }
 
+    window.addEventListener('resize', this.resize.bind(canvas), false);
+  }
+
+  resize = (canvas) => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
   }
 
   render() {
     return (
       <div className='bg-area'>
-        <canvas id="dark">
-          <img src={ bgPic } alt='background-pic'/>
-        </canvas>
-        <h1 id="title">DARK</h1>
+        <canvas ref='canvas' id="dark" />
+        <img ref='image' src={bgPic} alt="background" className="hide"/>
       </div>
     );
   }
